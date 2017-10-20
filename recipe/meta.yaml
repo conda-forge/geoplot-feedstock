@@ -24,7 +24,7 @@ requirements:
   build:
     - python
     - setuptools
-    - gdal >= 2.1.4
+    - gdal >=2.1.4
   run:
     - python
     - matplotlib
