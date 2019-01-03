@@ -11,16 +11,16 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python >=3
     - pip
   run:
     - python >=3
     - cartopy
-    - gdal 2.2.*
+    - gdal
     - geopandas
     - matplotlib
     - pandas
@@ -36,9 +36,11 @@ test:
 about:
   home: https://github.com/ResidentMario/geoplot
   license: MIT
-  summary: 'High-level geospatial plotting for Python.'
   license_family: MIT
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.md'
+  summary: 'High-level geospatial plotting for Python'
 
 extra:
   recipe-maintainers:
     - residentmario
+    - ocefpaf
