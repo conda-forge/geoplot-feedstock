@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About geoplot
 =============
 
@@ -18,8 +14,15 @@ Summary: High-level geospatial plotting for Python
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/geoplot-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/geoplot-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3927&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/geoplot-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
