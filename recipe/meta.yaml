@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 
 package:
   name: geoplot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoplot/geoplot-{{ version }}.tar.gz
-  sha256: 5e42912016c88d48e44fe0603e9f0250cb29a539fc3e99ac30b9dd41893217af
+  sha256: ceee1fa744ba95aedd2de1f3c804364b3bacc07b437022350f738da01495d57f
 
 build:
   number: 0
@@ -15,22 +15,22 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
-    - cartopy
-    - gdal
-    - geopandas
+    - python >=3.6
     - matplotlib
-    - pandas
     - seaborn
+    - pandas
+    - geopandas
+    - cartopy
+    - descartes
 
 test:
   imports:
     - geoplot
     - geoplot.crs
-    - geoplot.quad
+    - geoplot.ops
     - geoplot.utils
 
 about:
