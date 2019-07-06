@@ -15,16 +15,16 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
-    - cartopy
-    - gdal
-    - geopandas
+    - python >=3.6
     - matplotlib
-    - pandas
     - seaborn
+    - pandas
+    - geopandas
+    - cartopy
+    - descartes
 
 test:
   imports:
