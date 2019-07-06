@@ -30,7 +30,7 @@ test:
   imports:
     - geoplot
     - geoplot.crs
-    - geoplot.quad
+    - geoplot.ops
     - geoplot.utils
 
 about:
