@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: geoplot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoplot/geoplot-{{ version }}.tar.gz
-  sha256: ceee1fa744ba95aedd2de1f3c804364b3bacc07b437022350f738da01495d57f
+  sha256: 09a077381eb1492c4366147e64ba8c0b7476260ad9415dbc31848fffae83a14e
 
 build:
   number: 0
