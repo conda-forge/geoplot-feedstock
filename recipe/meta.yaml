@@ -25,6 +25,7 @@ requirements:
     - geopandas
     - cartopy
     - descartes
+    - contextily >= 1.0rc2
 
 test:
   imports:
