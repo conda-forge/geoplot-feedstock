@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: geoplot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoplot/geoplot-{{ version }}.tar.gz
-  sha256: 0b1c20bc49da7d77f287d2be2b16b33c4583022ed8c5780ece59d9237f2d342c
+  sha256: 37b2f9d012098dd63f790a57df0a06f7279bdd8226d7b73a2cb30e4f0286802b
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
     - geopandas
     - cartopy
     - descartes
+    - mapclassify
     - contextily >=1.0rc2
 
 test:
