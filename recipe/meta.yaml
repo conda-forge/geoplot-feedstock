@@ -25,6 +25,7 @@ requirements:
     - geopandas
     - cartopy
     - descartes
+    - mapclassify
     - contextily >=1.0rc2
 
 test:
