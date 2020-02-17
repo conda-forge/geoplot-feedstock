@@ -9,7 +9,7 @@ source:
   sha256: 37b2f9d012098dd63f790a57df0a06f7279bdd8226d7b73a2cb30e4f0286802b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - pandas
     - geopandas
