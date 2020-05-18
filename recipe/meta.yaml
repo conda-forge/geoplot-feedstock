@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: geoplot
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoplot/geoplot-{{ version }}.tar.gz
-  sha256: 37b2f9d012098dd63f790a57df0a06f7279bdd8226d7b73a2cb30e4f0286802b
+  sha256: eb073436c5a1cb7f97caa217cdb109e6cad4f3774e657757005e3f0f5a3183ca
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -39,8 +39,8 @@ about:
   home: https://github.com/ResidentMario/geoplot
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.md'
-  summary: 'High-level geospatial plotting for Python'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.md
+  summary: High-level geospatial plotting for Python
 
 extra:
   recipe-maintainers:
