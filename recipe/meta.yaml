@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -19,14 +19,14 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - matplotlib-base
-    - seaborn
-    - pandas
-    - geopandas
     - cartopy
+    - contextily >=1.0.0
     - descartes
-    - mapclassify
-    - contextily >=1.0rc2
+    - geopandas
+    - mapclassify >=2.1
+    - matplotlib-base
+    - pandas
+    - seaborn
 
 test:
   imports:
@@ -34,12 +34,16 @@ test:
     - geoplot.crs
     - geoplot.ops
     - geoplot.utils
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/ResidentMario/geoplot
   license: MIT
   license_family: MIT
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.md
+  license_file: LICENSE.md
   summary: High-level geospatial plotting for Python
 
 extra:
