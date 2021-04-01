@@ -9,7 +9,7 @@ source:
   sha256: eb073436c5a1cb7f97caa217cdb109e6cad4f3774e657757005e3f0f5a3183ca
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,7 @@ requirements:
     - mapclassify >=2.1
     - matplotlib-base
     - pandas
-    - seaborn
+    - seaborn-base
 
 test:
   imports:
