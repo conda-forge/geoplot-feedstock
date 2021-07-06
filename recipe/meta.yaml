@@ -21,7 +21,6 @@ requirements:
     - python >=3.6
     - cartopy
     - contextily >=1.0.0
-    - descartes
     - geopandas
     - mapclassify >=2.1
     - matplotlib-base
