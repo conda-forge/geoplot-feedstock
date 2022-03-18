@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: geoplot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoplot/geoplot-{{ version }}.tar.gz
-  sha256: 0b398a51f4536f3338a9231c871fd890c53a526e5b1df216098de97598ef6f86
+  sha256: 9614b2caa193a42de943afa2fea953d0997b9daf25ab2949be0681361a122790
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - contextily >=1.0.0
     - geopandas >=0.9.0
     - mapclassify >=2.1
-    - matplotlib-base
+    - matplotlib-base >=3.1.2
     - pandas
     - seaborn-base
 
